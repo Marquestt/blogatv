@@ -13,4 +13,4 @@ RUN ./mvnw package
 
 RUN ls -l ./target
 
-CMD ["java", "-jar", "target/blogatv-0.0.1-SANPSHOT.war"]
+CMD ["java", "-jar", "target/blogatv-0.0.1-SNAPSHOT.war"]

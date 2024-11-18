@@ -11,4 +11,6 @@ RUN chmod 777 mvnw
 
 RUN ./mvnw package
 
-CMD ["java", "-jar", "target/blogatv.war"]
+RUN ls -l ./target
+
+CMD ["java", "-jar", "target/blogatv-0.0.1-SANPSHOT.war"]

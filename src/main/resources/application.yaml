@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: blogatv
+  datasource:
+    url: jdbc:postgresql://dpg-cstjtre8ii6s73fjjkgg-a.oregon-postgres.render.com:5432/blogbanco
+    username: blogbanco_user
+    password: ZoLQPqeXSmCEsx8qt7GpPlD8uYyfjHLJ
+    driver-class-name: org.postgresql.Driver
+    initialize: true
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    generate-ddl: true
+  sql:
+    init:
+      schema-locations: classpath:/schema-postgresql.sql
+      mode: always
+      platform: postgres
+  profiles:
+    active: default
+
+server:
+  port: 8080

@@ -1,0 +1,39 @@
+body{
+    background-color: #C5D3E8;
+}
+
+header{
+    display: flex;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    padding: 2rem 0rem;
+    background-color: #C5D3E8;
+    border-bottom: 0.1rem solid #A6AEBF;
+}
+
+main{
+    background-color: #FFF8DE;
+    margin: 1rem 2rem;
+    border-radius: 1rem;
+    width: 95vw;
+    height: 100vh;
+}
+
+main article{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 1rem 2rem;
+    box-sizing: border-box;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 2rem 0rem;
+    background-color: #A6AEBF;
+}
+
+/*#A6AEBF*/

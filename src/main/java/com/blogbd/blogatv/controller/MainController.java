@@ -46,7 +46,7 @@ public class MainController {
     public String postarOuEditar(@ModelAttribute Post post, @PathVariable(required = false) Integer id) {
         PostService ps = context.getBean(PostService.class);
 
-        if (id != 0) {
+        if (id != null) {
             post.setId(id);
             ps.atualizarPost(post);
         }
